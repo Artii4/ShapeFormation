@@ -27,7 +27,7 @@ struct Rect {
   }
 
   // Main draw function
-  void draw()
+  void draw() const
   {
 	  for (int y = 0; y<sizeY; y++) {
 		  for (int x = 0; x<sizeX; x++) {
@@ -67,12 +67,12 @@ struct Circle {
 	  this->radius = radius;
   }
 
-  double getArea()
+  double getArea() const
   {
 	  return M_PI*radius*radius;
   }
 
-  double getPerimeter()
+  double getPerimeter() const
   {
   	return M_PI * 2 * radius * 2;
   }
