@@ -1,5 +1,5 @@
 #include <iostream>
-const double PI = 3.14159265359;
+#include <cmath>
 
 /*
  * GENERAL INFORMATION:
@@ -69,12 +69,12 @@ struct Circle {
 
   double getArea()
   {
-	  return PI*radius*radius;
+	  return M_PI*radius*radius;
   }
 
   double getPerimeter()
   {
-  	return PI * 2 * radius * 2;
+  	return M_PI * 2 * radius * 2;
   }
 
   void draw()
